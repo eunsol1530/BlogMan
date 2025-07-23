@@ -15,6 +15,11 @@ module.exports = [
   cookieSession({
     name: 'session',
     keys: ['123'],
+    domain: 'example.com', // Set to your domain
+    expires: new Date(Date.now() + 60 * 60 * 1000), // 1 hour expiration
+    httpOnly: true,
+    path: '/',
+    secure: true, // Ensure cookies are sent over HTTPS
   }),
   cookieParser(),
 ];

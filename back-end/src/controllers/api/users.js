@@ -113,9 +113,7 @@ module.exports = {
           user: 'projectblogman@gmail.com', // generated ethereal user
           pass: 'girlscript2020', //account.pass
         },
-        tls: {
-          rejectUnauthorized: false,
-        },
+        // Removed the tls configuration to use default secure settings
       });
 
       // setup email data with unicode symbols
